@@ -6,10 +6,9 @@ import PastEventCard from "../components/PastEventCard.astro";
 import Grid from "../components/Grid.astro";
 import { getCollection } from "astro:content";
 
-import ilSentieroDiArgentoLocandinaImage from "../assets/events/il-sentiero-di-argento-4/locandina.png";
+import ilSogno2CoverImage from "../assets/events/il-sogno-2/cover.png";
 
 const events = (await getCollection("events")).sort((a, b) => Number(b.data.date) - Number(a.data.date));
-import ilSognoCoverImage from "../assets/events/il-sogno/cover.png";
 ---
 
 <Layout title="Eventi - AFK Progetto Giovani">
@@ -18,15 +17,15 @@ import ilSognoCoverImage from "../assets/events/il-sogno/cover.png";
         <section>
             <h2>PROSSIMI EVENTI</h2>
             <p>Novità in <strong>in arrivo</strong>, restate connessi!</p>
-            <!-- <EventCard
-                title="Il sentiero d'argento - Replica Palermo"
-                text="Un giovane becchino, un filosofo dimenticato e un trattato proibito: questa storia racconta quanto può essere potente un'idea, anche quando il mondo la ignora."
-                url="https://beacons.ai/afkprogettogiovani"
-                date1="Sabato 25 Ottobre, 20:45"
-                place="Teatro Orione Palermo"
-                img={ilSentieroDiArgentoLocandinaImage}
-                alt="Locandina Il Sentiero di Argento"
-            /> -->
+            <EventCard
+                title="Il sogno - Replica"
+                text="Il nostro nuovo spettacolo ’Sogno’, ispirato alla commedia Shakesperiana ’Sogno di una Notte di Mezza Estate’"
+                url="https://docs.google.com/forms/d/e/1FAIpQLSdTDM20ShDmIQAcP9B1L1YC-UmAlT-XEC4RdNvX3y_2H1i9AA/viewform"
+                date1="Sabato 16 Maggio, 20:30"
+                place="Teatro Civico Roberto De Silva, Rho"
+                img={ilSogno2CoverImage}
+                alt="Locandina Il Sogno"
+            />
         </section>
         <section class="section-light" id="eventi-passati">
             <h2>EVENTI PASSATI</h2>

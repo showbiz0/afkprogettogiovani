@@ -6,7 +6,7 @@ import PastEventCard from "../components/PastEventCard.astro";
 import Grid from "../components/Grid.astro";
 import { getCollection } from "astro:content";
 
-import ilSogno2CoverImage from "../assets/events/il-sogno-2/cover.png";
+import ilSogno2CoverImage from "../assets/events/il-sogno-2/locandina.jpg";
 
 const events = (await getCollection("events")).sort((a, b) => Number(b.data.date) - Number(a.data.date));
 ---

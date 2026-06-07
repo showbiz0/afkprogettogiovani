@@ -1,5 +1,5 @@
 ---
-title: 'Sogno'
+title: 'Sogno - Replica'
 text: 'Abbiamo presentato, sul palco del Teatro Civico Roberto de Silva di Rho, la replica del nostro spettacolo ’Sogno’, ispirato alla commedia Shakesperiana ’Sogno di una Notte di Mezza Estate’'
 date: 2026-05-16
 place: 'Teatro Civico Roberto de Silva di Rho'
